@@ -725,6 +725,18 @@ body {
     .menu {
         display: none;
     }
+    .menu-burger {
+        width: 50%;
+        height: 250px;
+        padding: 117px 0 241px 0;
+        border-radius: 23em 1.5em/10em 0em;
+    }
+    .menu-burger__item {
+        font: 600 20px/24px 'montserrat', arial, helvetica, sans-serif;
+    }
+    .menu-burger__item:nth-child(5) {
+        padding-bottom: 60px;
+    }
     .burger__mobile {
         top: 34px;
         right: 34px;
@@ -943,6 +955,23 @@ body {
     .logo {
         background: no-repeat url('img/logo375.svg');
     }
+    .burger__mobile {
+        top: 16px;
+        right: 21px;
+        width: 24px;
+        height: 20px;
+    }
+    .burger__mobile>span,
+    .burger__mobile>span::before,
+    .burger__mobile>span::after {
+        height: 2px;
+    }
+    .burger__mobile>span::before {
+        top: -7px;
+    }
+    .burger__mobile>span::after {
+        top: 7px;
+    }
     .exterior {
         background: top 40px center no-repeat url(img/tesla375.png);
         background-size: contain;
@@ -1061,6 +1090,9 @@ body {
 }
 
 @media (max-width: 375px) {
+    .menu-burger {
+        width: 100%;
+    }
     .exterior {
         background: top 82px center no-repeat url(img/tesla375.png);
     }
@@ -1090,5 +1122,22 @@ body {
     }
     .safety-left__content {
         width: 400px;
+    }
+}
+
+@media (max-width: 374px) {
+    .exterior__img,
+    .exterior {
+        background-size: contain;
+    }
+    .exterior__car {
+        justify-content: center;
+        width: 60%;
+    }
+    .block-left {
+        margin-bottom: 100px;
+    }
+    .safety {
+        background-size: contain;
     }
 }
