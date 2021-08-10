@@ -126,52 +126,56 @@ body {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
+    top: 70px;
     right: -100%;
-    width: 30.5%;
-    height: 47%;
+    width: 200px;
+    height: 350px;
     margin: 0;
-    padding: 193px 0;
+    padding: 100px 0;
     text-align: center;
     background: #E51937;
     max-width: 100%;
     transition: right .5s ease-out;
     z-index: 2;
-    border-radius: 23em 1.5em/6em 0em;
+    border-radius: 60px 0 0 60px;
 }
 
 .menu-burger__item {
     display: inline-block;
     margin: 0;
     padding: 12px 0;
-    font: 600 30px/36px 'montserrat', arial, helvetica, sans-serif;
+    font: 600 20px/24px 'montserrat', arial, helvetica, sans-serif;
     color: #fff;
     text-decoration: none;
     transition: font-size 0.5s ease;
 }
 
+.menu-burger__item:nth-child(5) {
+    padding-bottom: 30px;
+}
+
 .menu-burger__item:hover {
-    font-size: 32px;
+    font-size: 25px;
 }
 
 #burger__toggle:checked~.burger__mobile>span {
     transform: rotate(45deg);
     top: 13px;
-    background: #fff;
+    background: #E51937;
     height: 3px;
 }
 
 #burger__toggle:checked~.burger__mobile>span::before {
     top: 0;
     transform: rotate(0);
-    background: #fff;
+    background: #E51937;
     height: 3px;
 }
 
 #burger__toggle:checked~.burger__mobile>span::after {
     top: 0;
     transform: rotate(90deg);
-    background: #fff;
+    background: #E51937;
     height: 3px;
 }
 
@@ -715,6 +719,9 @@ body {
     .safety-title {
         display: none;
     }
+    .burger__mobile {
+        right: 30px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -726,10 +733,9 @@ body {
         display: none;
     }
     .menu-burger {
-        width: 50%;
-        height: 250px;
-        padding: 117px 0 241px 0;
-        border-radius: 23em 1.5em/10em 0em;
+        width: 200px;
+        height: 300px;
+        padding: 108px 0 241px 0;
     }
     .menu-burger__item {
         font: 600 20px/24px 'montserrat', arial, helvetica, sans-serif;
@@ -1038,7 +1044,7 @@ body {
         background: no-repeat center top -37px url(img/interier768.png);
         background-size: cover;
         height: 400px;
-        margin-bottom: O;
+        margin-bottom: 23px;
     }
     .block-left__title {
         display: none;
@@ -1091,7 +1097,9 @@ body {
 
 @media (max-width: 375px) {
     .menu-burger {
+        top: 54px;
         width: 100%;
+        border-radius: 23em 1.5em/7em 0em;
     }
     .exterior {
         background: top 82px center no-repeat url(img/tesla375.png);
@@ -1133,6 +1141,9 @@ body {
     .exterior__car {
         justify-content: center;
         width: 60%;
+    }
+    .interier {
+        margin-bottom: 113px;
     }
     .block-left {
         margin-bottom: 100px;
