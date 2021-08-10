@@ -231,7 +231,7 @@ body {
     justify-content: left;
     width: 60%;
     margin: auto;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
 }
 
 .speed {
@@ -259,7 +259,7 @@ body {
 
 .distance {
     background: no-repeat left top 7px url(img/road.svg);
-    padding: 0 0 6px 50px;
+    padding: 0 0 12px 50px;
     margin-right: 7.1vw;
 }
 
