@@ -1142,6 +1142,28 @@ body {
         justify-content: center;
         width: 60%;
     }
+    .speed,
+    .test {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .speed {
+        background: no-repeat left bottom 8px url(img/speed375.svg);
+        padding: 0 0 0 50px;
+    }
+    .distance {
+        background: no-repeat left top 4px url(img/road375.svg);
+        padding: 0 0 0 50px;
+        margin-bottom: 25px;
+    }
+    .test {
+        font: 700 13px/16px 'montserrat', arial, helvetica, sans-serif;
+        background: no-repeat left url(img/test375.svg);
+        padding: 10px 0 10px 50px;
+    }
+    .button {
+        margin-top: 0;
+    }
     .interier {
         margin-bottom: 113px;
     }
